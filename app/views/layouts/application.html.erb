@@ -1,15 +1,58 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hyper</title>
+    <title>Buy &amp; Sell Computers Online | hyper</title>
+    <meta name="description" content="Hyper is the marketplace for computer enthusiasts to buy and sell used, vintage, and new computers and computer parts online." />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!-- <link rel="canonical" href="https://hyper.com/" /> -->
+    
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
   </head>
 
-  <body>
+  <body class="sans-serif">
+    <header class="flex">
+      <div class="hyper-brand">hyper_</div>
+      <div class="hyper-search">
+        <label for="site-search">Search the site:</label>
+        <input type="search" id="site-search" name="q" aria-label="Search through site content">
+        <button>Search</button>
+      </div>
+      <nav>
+        <ol>
+          <li>Sell</li>
+          <li>Cart</li>
+          <li>Notifications</li>
+          <li>Profile</li>
+        </ol>
+      </nav>
+    </header>
     <%= yield %>
+    <footer>
+      <div class="hyper-brand">hyper_</div>
+      
+      <h4>List title</h4>
+      <ul>
+        <li>List item</li>
+        <li>List item</li>
+        <li>List item</li>
+        <li>List item</li>
+        <li>List item</li>
+      </ul>
+      
+      <h4>List title</h4>
+      <ul>
+        <li>List item</li>
+        <li>List item</li>
+        <li>List item</li>
+        <li>List item</li>
+        <li>List item</li>
+      </ul>      
+    </footer>
   </body>
 </html>
